@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+     font-family: "Druk";
+     src: url("../Druk_Collection/DrukTextWide-Bold-Trial.otf") format("opentype"), url("../Druk_Collection/DrukWide-Medium-Trial.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("../Graphik-Font-Family/GraphikRegular.otf") format("opentype"), url("../Graphik-Font-Family/GraphikLight.otf") format("opentype"), url("../Graphik-Font-Family/GraphikBold.otf") format("opentype"), url("../Graphik-Font-Family/GraphikExtralight.otf") format("opentype");
+}
+
+html{
+    height: auto;
+    background: rgb(34,82,24);
+background: linear-gradient(180deg, rgba(34,82,24,1) 0%, rgba(223,140,158,1) 63%, rgba(255,137,109,1) 100%);
+}
+
+.titulos{
+    width: 100%;
+    margin: 6em 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: Druk;
+    color: white;
+    font-size: 16em;
+}
+
+h2{
+    font-family: Graphik;
+    font-weight: 200;
+    color: white;
+    font-size: 7em; 
+}
+
+form{
+    width: 100%;
+    margin: 15em 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form div{
+    height: 6vh;
+}
+
+form label{
+    font-family: Graphik;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+}
+
+::placeholder{
+    color: white;
+}
+
+option{
+    color: black;
+}
+
+input, select{
+    font-family: Graphik;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    font-size: 1.5em;
+    border: white 2px solid;
+    border-radius: 3px;
+}
+
+button{
+    margin: 2rem;
+    padding: 1rem;
+    width: 200px;
+    font-family: Druk;
+    font-weight: bold;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 3px;
+    border: 3px solid rgb(0, 0, 0);
+}
