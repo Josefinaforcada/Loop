@@ -1,14 +1,8 @@
 /* GENERAL */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @font-face {
-     font-family: "Druk";
-     src: url("../Druk_Collection/DrukTextWide-Bold-Trial.otf") format("opentype"), url("../Druk_Collection/DrukWide-Medium-Trial.otf") format("opentype");
+    font-family: "Druk";
+    src: url("../Druk_Collection/DrukTextWide-Bold-Trial.otf") format("opentype"), url("../Druk_Collection/DrukWide-Medium-Trial.otf") format("opentype");
 }
 
 @font-face {
@@ -16,36 +10,44 @@
     src: url("../Graphik-Font-Family/GraphikRegular.otf") format("opentype"), url("../Graphik-Font-Family/GraphikLight.otf") format("opentype"), url("../Graphik-Font-Family/GraphikBold.otf") format("opentype"), url("../Graphik-Font-Family/GraphikExtralight.otf") format("opentype");
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html{
     height: auto;
     background-color: black;
 }
 
+form{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
 h1{
     font-family: Druk;
     color: white;
-    font-size: 6em;
 }
 
 h2{
     font-family: Graphik;
     font-weight: 200;
     color: white;
-    font-size: 2.7em; 
 }
 
 h3{
     font-family: Graphik;
     font-weight: 200;
     color: white;
-    font-size: 1.5em; 
-    margin: 1rem;
 }
 
-/* INDEX */
 .titulos{
     width: 100%;
-    margin: 6em 0;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -53,30 +55,22 @@ h3{
 }
 
 .titulos img{
-width: 30%;
-margin: 5rem 0;
-transform: rotate(15deg);
+    width: 35%;
+    transform: rotate(15deg);
 }
-
 
 form{
     width: 100%;
-    margin: 13rem 0 8rem 0;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-around;
 }
 
-form div{
-    height: 6vh;
-}
-
 form label{
     font-family: Graphik;
     font-weight: bold;
     color: white;
-    font-size: 1.5em;
 }
 
 ::placeholder{
@@ -93,25 +87,20 @@ input, select{
     font-weight: bold;
     color: white;
     background-color: transparent;
-    font-size: 1.5em;
     border: white 2px solid;
     border-radius: 3px;
 }
 
 button{
-    margin: 2rem;
-    padding: 1rem;
-    width: 200px;
     font-family: Druk;
     font-weight: bold;
-    font-size: 1em;
     color: rgb(0, 0, 0);
     background-color: white;
     border-radius: 3px;
     border: 3px solid rgb(0, 0, 0);
 }
 
-/* GRACIAS */
+    /* GRACIAS */
 
 .titulosGracias{
     width: 100%;
@@ -120,4 +109,253 @@ button{
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (max-width: 454px) {
+    h1{
+        font-size: 3em;
+    }
+    
+    h2{
+        font-size: 1.3em; 
+    }
+    
+    h3{
+        font-size: 0.7em; 
+        margin: 0.5rem;
+    }
+    
+    /* INDEX */
+    .titulos{
+        margin: 7rem 0;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .titulos img{
+    margin:6rem 0;
+    width: 70%;
+    }
+    
+    
+    form{
+        margin: 3rem 0 2em 0;
+    }
+    
+    form div{
+        height: 4.5vh;
+        margin: 1rem;
+        text-align: center;
+    }
+    
+    form label, input, select{
+        font-size: 0.6;
+        padding: 0.3rem;
+        margin-top: 0.5rem;
+    }
+    
+    button{
+        margin: 3rem;
+        padding: 1rem;
+        width: 200px;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 455px) {
+    h1{
+        font-size: 4.5em;
+    }
+    
+    h2{
+        font-size: 2em; 
+    }
+    
+    h3{
+        font-size: 0.7em; 
+        margin: 0.5rem;
+    }
+    
+    /* INDEX */
+    .titulos{
+        margin: 7rem 0;
+    }
+    
+    .titulos img{
+    margin:5rem 0;
+    width: 50%;
+    }
+    
+    
+    form{
+        margin: 12rem 0 6em 0;
+    }
+    
+    form div{
+        height: 3vh;
+        margin: 1rem;
+        text-align: center;
+    }
+    
+    form label, input, select{
+        font-size: 0.8;
+        padding: 0.3rem;
+        margin-top: 0.5rem;
+    }
+    
+    button{
+        margin: 3rem;
+        padding: 1rem;
+        width: 200px;
+        font-size: 1em;
+    }
+}
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+    h1{
+        font-size: 5.5em;
+    }
+    
+    h2{
+        font-size: 2.5em; 
+    }
+    
+    h3{
+        font-size: 0.7em; 
+        margin: 0.5rem;
+    }
+    
+    /* INDEX */
+    .titulos{
+        margin: 7rem 0;
+    }
+    
+    .titulos img{
+    margin:5rem 0;
+    }
+    
+    
+    form{
+        margin: 12rem 0 6em 0;
+    }
+    
+    form div{
+        height: 3vh;
+        margin: 1rem;
+    }
+    
+    form label, input, select{
+        font-size: 0.8;
+        padding: 0.3rem;
+    }
+    
+    button{
+        margin: 1rem;
+        padding: 1rem;
+        width: 200px;
+        font-size: 1em;
+    }
+}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+   /* GENERAL */
+
+h1{
+    font-size: 5.5em;
+}
+
+h2{
+    font-size: 2.5em; 
+}
+
+h3{
+    font-size: 0.7em; 
+    margin: 0.5rem;
+}
+
+/* INDEX */
+.titulos{
+    margin: 7rem 0;
+}
+
+.titulos img{
+margin:5rem 0;
+}
+
+
+form{
+    margin: 12rem 0 6em 0;
+}
+
+form div{
+    height: 3vh;
+    margin: 1rem;
+}
+
+form label, input, select{
+    font-size: 1em;
+    padding: 0.3rem;
+}
+
+button{
+    margin: 1rem;
+    padding: 1rem;
+    width: 200px;
+    font-size: 1em;
+}
+
+}
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    
+    /* GENERAL */
+
+    h1{
+        font-size: 6em;
+    }
+
+    h2{
+        font-size: 2.7em; 
+    }
+
+    h3{
+        font-size: 1.5em; 
+        margin: 1rem;
+    }
+
+    /* INDEX */
+    .titulos{
+        margin: 6em 0;
+    }
+
+    .titulos img{
+    width: 30%;
+    margin: 5rem 0;
+    }
+
+
+    form{
+        margin: 13rem 0 8rem 0;
+    }
+
+    form div{
+        height: 6vh;
+    }
+
+    form label{
+        font-size: 1.5em;
+    }
+
+    input, select{
+        font-size: 1.5em;
+    }
+
+    button{
+        margin: 2rem;
+        padding: 1rem;
+        width: 200px;
+        font-size: 1em;
+    }
+
 }
