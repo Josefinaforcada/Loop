@@ -11,25 +11,23 @@
     <main>
         <div class="titulos">
             <h1>EL LOOP</h1>
-            <h2>¿Sabés lo que es la felicidad?</h2>
+            <h2>¿Sentís que tu realidad te limita?</h2>
             <img src="media/argolla.png" alt="">
         </div>
-        
-       
-        
+
         <form action="https://formsubmit.co/9be51582623f3dedfb1c3dff82048177" method="post">
             <input type="hidden" name="_autoresponse" value="hola. Segui el siguiente link: https://www.youtube.com/watch?v=_wi4Rht8wuQ&ab_channel=LifeforFun">
             <input type="hidden" name="_next" value="https://josefinaforcada.github.io/Loop/gracias.html">
             <div>
                 <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Juan">
+                <input type="text" name="nombre" id="nombre" placeholder="Juan" required>
             </div>
             <div>
                 <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Perez">
+                <input type="text" name="apellido" id="apellido" placeholder="Perez" required>
             </div>  
             <div>
-                <label for="sexo">Sexo:</label>
+                <label for="sexo">Genero:</label>
                 <select name="sexo" id="sexo">
                     <option value="Mujer">Mujer</option>
                     <option value="Hombre">Hombre</option>
@@ -38,7 +36,7 @@
             </div>
             <div>
                 <label for="email">Mail:</label>
-                <input type="email" name="email" id="email" placeholder="correo@gmail.com">
+                <input type="email" name="email" id="email" placeholder="correo@gmail.com" required>
             </div>
             <div>
                 <label for="vivienda">¿Con quienes vivís?</label>
@@ -61,32 +59,50 @@
                 </select>
             </div>
             <div>
-                <label for="sosFeliz">¿Sos Felíz?</label>
+                <label for="rutina">¿Te cansa tu rutina del día a día??</label>
+                <select name="rutina" id="rutina">
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                    <option value="No se">No se</option>
+                    <option value="Quizas">Quizás</option>
+                </select>
+            </div>
+            <div>
+                <label for="sosFeliz">¿Sentís que tu realidad te limita?</label>
                 <select name="sosFeliz" id="sosFeliz">
                     <option value="Si">Si</option>
                     <option value="No">No</option>
+                    <option value="No se">No se</option>
+                    <option value="Quizas">Quizás</option>
                 </select>
             </div>
             <div>
-                <label for="imagen">¿Estás satisfechx con tu imagen?</label>
-                <select name="imagen" id="imagen">
+                <label for="realidad">¿Estás dispuesto a cambiar esa realidad?</label>
+                <select name="realidad" id="realidad">
                     <option value="Si">Si</option>
-                    <option value="No">No</option>
+                    <option value="Quizas">Quizás</option>                    
+                    <option value="Porsupuesto">Por supuesto</option>
                 </select>
             </div>
             <div>
-                <label for="futuro">¿Tenés planes a futuro que te ilusionen?</label>
-                <select name="futuro" id="futuro">
+                <label for="cambiar">¿Estás dispuesto a cambiar esa realidad?</label>
+                <select name="cambiar" id="cambiar">
                     <option value="Si">Si</option>
-                    <option value="No">No</option>
+                    <option value="Quizas">Quizás</option>                    
+                    <option value="Porsupuesto">Por supuesto</option>
                 </select>
             </div>
             <div>
-                <label for="dispuesto">¿Que estás dispuesto a hacer para ser feliz?</label>
-                <select name="dispuesto" id="dispuesto">
-                    <option value="Nada">Nada</option>
-                    <option value="Todo">Todo lo que sea necesario</option>
+                <label for="version">¿Querés ser tu mejor versión?</label>
+                <select name="version" id="version">
+                    <option value="Si">Si</option>
+                    <option value="Quizas">Quizás</option>                    
+                    <option value="Porsupuesto">Por supuesto</option>
                 </select>
+            </div>            
+            <div>
+                <label for="dispuesto">¿Que harías para cumplir tus deseos?</label>
+                <input type="text" name="dispuesto" id="dispuesto" placeholder="Escribí acá" required>
             </div>
             <div class="boton">
                 <button type="submit" id="enviar">ENVIAR</button>

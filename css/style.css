@@ -117,7 +117,7 @@ button{
     }
     
     h2{
-        font-size: 1.3em; 
+        font-size: 1.1em; 
     }
     
     h3{
@@ -139,7 +139,7 @@ button{
     
     
     form{
-        margin: 3rem 0 2em 0;
+        margin: 3rem 0 4em 0;
     }
     
     form div{
@@ -164,11 +164,11 @@ button{
 
 @media only screen and (min-width: 455px) {
     h1{
-        font-size: 4.5em;
+        font-size: 4.3em;
     }
     
     h2{
-        font-size: 2em; 
+        font-size: 1.6em; 
     }
     
     h3{
@@ -188,7 +188,7 @@ button{
     
     
     form{
-        margin: 12rem 0 6em 0;
+        margin: 12rem 0 7em 0;
     }
     
     form div{
@@ -217,7 +217,7 @@ button{
     }
     
     h2{
-        font-size: 2.5em; 
+        font-size: 2.2em; 
     }
     
     h3{
@@ -266,7 +266,7 @@ h1{
 }
 
 h2{
-    font-size: 2.5em; 
+    font-size: 2.3em; 
 }
 
 h3{
@@ -316,7 +316,7 @@ button{
     }
 
     h2{
-        font-size: 2.7em; 
+        font-size: 2.4em; 
     }
 
     h3{
